@@ -1,0 +1,15 @@
+{
+  "name": "creationapp",
+  "version": "1.0.0",
+  "description": "My first creation app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pushpendra singh",
+  "license": " MIT",
+  "dependencies": {
+    "markovchain": "^1.0.2",
+    "nodemon": "^2.0.6"
+  }
+}

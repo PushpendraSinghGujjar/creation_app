@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Markovchain</title>
+        <script type="text/javascript">
+        
+
+        var MarkovChain = require('markovchain')
+,fs = require('fs')
+,quotes = new MarkovChain(fs.readFileSync('./data.txt', 'utf8'));
+
+    // function generateText(onText){
+    //     for (var i=0;i<5;i++){
+    //         quotes
+    //         .start('The')
+    //         .end(10)
+    //         .process((err,string) => onText
+    //         (string));
+    //     }
+    // }
+    // console.log(generateText);
+    x=quotes.start('The').end(5).process();
+    function fn1(){
+        y=x;
+   alert("this is "+y);
+    }
+
+    // module.exports = generateText;
+
+
+        
+        </script>
+    </head>
+
+    <body>
+        <button onclick="fn1()">Click me</button>
+        
+    </body> 
+</html>
